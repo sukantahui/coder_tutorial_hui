@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {RouterModule} from "@angular/router";
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
+import {HeaderModule} from "./header/header.module";
 
 
 
@@ -19,20 +20,20 @@ import {MatIconModule} from "@angular/material/icon";
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     PythonHomeComponent,
     PythonIntroductionComponent,
     PythonDataTypeComponent,
     PythonNumberComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    RouterModule,
-    MatButtonModule,
-    MatIconModule,
-    BrowserAnimationsModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        RouterModule,
+        MatButtonModule,
+        MatIconModule,
+        BrowserAnimationsModule,
+        HeaderModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

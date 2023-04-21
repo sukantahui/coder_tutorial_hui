@@ -7,15 +7,21 @@ import { PythonIntroductionComponent } from './pages/python-home/python-introduc
 import { PythonNumberComponent } from './pages/python-home/python-number/python-number.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { 
+  { path: '', loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule) },
+  { path: 'Python', loadChildren: () => import('./pages/python/python.module').then(m => m.PythonModule) },
+  {
     path: 'python', component: PythonHomeComponent,
-    children: [
-      {path: '', component: PythonIntroductionComponent},
-      {path: 'dataType', component: PythonDataTypeComponent},
-      {path: 'pythonNumber', component: PythonNumberComponent}
-    ]
+    // children: [
+    //   {path: '', component: PythonIntroductionComponent},
+    //   {path: 'dataType', component: PythonDataTypeComponent},
+    //   {path: 'pythonNumber', component: PythonNumberComponent}
+    // ]
   },
+  { path: 'Python', loadChildren: () => import('./pages/python/python.module').then(m => m.PythonModule) },
+  { path: 'Tutorial', loadChildren: () => import('./pages/tutorial/tutorial.module').then(m => m.TutorialModule) },
+  { path: 'Practice', loadChildren: () => import('./pages/practice/practice.module').then(m => m.PracticeModule) },
+  // { path: 'Header', loadChildren: () => import('./header/header.module').then(m => m.HeaderModule) },
+
 ];
 
 @NgModule({
