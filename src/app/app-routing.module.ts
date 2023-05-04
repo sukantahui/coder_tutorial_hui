@@ -8,6 +8,7 @@ import { PythonNumberComponent } from './pages/python-home/python-number/python-
 
 const routes: Routes = [
   { path: '', loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule) },
+  { path: 'login', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule) },
   { path: 'Python', loadChildren: () => import('./pages/python/python.module').then(m => m.PythonModule) },
   {
     path: 'python', component: PythonHomeComponent,
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'Tutorial', loadChildren: () => import('./pages/tutorial/tutorial.module').then(m => m.TutorialModule) },
   { path: 'Practice', loadChildren: () => import('./pages/practice/practice.module').then(m => m.PracticeModule) },
   { path: 'PythonTutorial', loadChildren: () => import('./pages/tutorial/python-tutorial/python-tutorial.module').then(m => m.PythonTutorialModule) },
+  { path: 'auth', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule) },
   // { path: 'PythonTutorialIntroduction', loadChildren: () => import('./pages/tutorial/python-tutorial/python-tutorial-introduction/python-tutorial-introduction.module').then(m => m.PythonTutorialIntroductionModule) },
 
   // { path: 'Header', loadChildren: () => import('./header/header.module').then(m => m.HeaderModule) },
