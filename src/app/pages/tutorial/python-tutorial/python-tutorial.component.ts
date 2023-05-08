@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./python-tutorial.component.scss']
 })
 export class PythonTutorialComponent {
-
+  isPython=false;
+  onClickPython(){
+    this.isPython=true;
+  }
 }

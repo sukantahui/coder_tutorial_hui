@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { PythonTutorialListRoutingModule } from './python-tutorial-list-routing.module';
 import { PythonTutorialListComponent } from './python-tutorial-list.component';
+import { MatTabsModule } from '@angular/material/tabs';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { PythonTutorialListComponent } from './python-tutorial-list.component';
   ],
   imports: [
     CommonModule,
-    PythonTutorialListRoutingModule
+    PythonTutorialListRoutingModule,
+    MatTabsModule,
   ]
 })
 export class PythonTutorialListModule { }
