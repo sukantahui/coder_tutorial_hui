@@ -13,8 +13,4 @@ export class AppComponent {
   title = 'coder_tutorial';
   subject = "Main";
   showSideBar=true;
-
-
-
-
 }
