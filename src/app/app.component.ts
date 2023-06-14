@@ -13,4 +13,14 @@ export class AppComponent {
   title = 'coder_tutorial';
   subject = "Main";
   showSideBar=true;
-}
+
+  sideBarOpen=true;
+
+
+  ngOnInit(): void {
+
+    
+    setTimeout(() => {
+      this.sideBarOpen=false;
+    }, 3000);
+  }}
