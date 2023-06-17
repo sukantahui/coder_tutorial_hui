@@ -1,5 +1,17 @@
 body
 {overflow-x: hidden;}
+.vline {
+  position: absolute;
+  width: 1px;
+  height: 130px;
+  top: 65%;
+  transform: translateY(-45%);
+  left: 700px;
+  color: #d9d9d9;
+  display: block;
+  box-shadow: #cac6c6 2px 0;
+  background: #fff;
+}
 .page{
   color: white;
   padding: 0 0rem;
@@ -372,17 +384,6 @@ body
     font-size: 3em;
   }
 
-  .vline {
-    position: absolute;
-    width: 1px;
-    height: 130px;
-    top: 45%;
-    transform: translateY(-45%);
-    left: 50%;
-    color: #d9d9d9;
-    display: block;
-    box-shadow: #cac6c6 2px 0;
-    background: #fff;
-  }
+  
 }
 
